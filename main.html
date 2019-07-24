@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Math Equation</title>
+<!--    <link rel="stylesheet" href="/realtime_math_equation/main.css" type="text/css">-->
+    <link rel="stylesheet" href="./main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+          integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="container">
+    <h1>Realtime Math Equation Generator</h1>
+    <div class="ui input focus">
+<!--        <input id="math-input" type="text" placeholder="Type some latex math equations">-->
+        <textarea id="math-input" rows="4" cols="50">
+
+        </textarea>
+    </div>
+    <div id="math-display"></div>
+    <h4>Source</h4>
+    <a href="https://www.mathjax.org/#gettingstarted">Source</a><br>
+    <a href="https://docs.mathjax.org/en/latest/advanced/typeset.html">realtime</a>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<!--<script src="/realtime_math_equation/main.js"></script>-->
+<script src="./main.js"></script>
+</body>
+</html>
