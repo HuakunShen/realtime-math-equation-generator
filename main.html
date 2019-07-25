@@ -11,23 +11,22 @@
 <body>
 <div class="container">
     <h1>Realtime Math Equation Generator</h1>
-    <div class="ui input focus">
-<!--        <input id="math-input" type="text" placeholder="Type some latex math equations">-->
-        <textarea id="math-input" rows="4" cols="50" spellcheck="false">
-
-        </textarea>
+    <div id="math-input-container" class="ui input focus">
+        <textarea id="math-input" rows="6" cols="100" spellcheck="false"></textarea>
     </div>
     <div id="math-display"></div>
-    <h4>Source</h4>
-    <a href="https://www.mathjax.org/#gettingstarted">Source</a><br>
-    <a href="https://docs.mathjax.org/en/latest/advanced/typeset.html">realtime</a>
+    <div id="source-container">
+        <a href="https://github.com/HuakunShen/real_time_math_equation_generator" target="_blank">Source Code</a><br>
+        <a href="https://www.mathjax.org/#gettingstarted" target="_blank">Library</a><br>
+        <a href="https://docs.mathjax.org/en/latest/advanced/typeset.html" target="_blank">Library Doc</a>
+    </div>
+
 </div>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-<!--<script src="/realtime_math_equation/main.js"></script>-->
 <script src="./main.js"></script>
 </body>
 </html>
