@@ -25,9 +25,3 @@ document.getElementById("text-color").addEventListener('change', (event) => {
     });
 
 });
-
-// function backgroundChange() {
-//     console.log("background");
-//     document.body.style.backgroundColor = "red";
-//
-// }
