@@ -10,3 +10,24 @@ math_input.oninput = function () {
     });
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, display]);
 };
+
+document.getElementById("background-color").addEventListener('change', (event) => {
+    document.body.style.backgroundColor = event.target.value;
+});
+
+document.getElementById("text-color").addEventListener('change', (event) => {
+    $("h1")[0].style.color = event.target.value;
+    $("#source-container")[0].style.color = event.target.value;
+    $("#math-display")[0].style.color = event.target.value;
+    $("#math-display")[0].style.borderColor = event.target.value;
+    Array.from($("a")).forEach((a) => {
+        a.style.color = event.target.value;
+    });
+
+});
+
+// function backgroundChange() {
+//     console.log("background");
+//     document.body.style.backgroundColor = "red";
+//
+// }

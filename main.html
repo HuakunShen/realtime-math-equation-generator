@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Realtime Math Equation</title>
-<!--    <link rel="stylesheet" href="/realtime_math_equation/main.css" type="text/css">-->
+    <!--    <link rel="stylesheet" href="/realtime_math_equation/main.css" type="text/css">-->
     <link rel="stylesheet" href="./main.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-          integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous"/>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"-->
+<!--          integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous"/>-->
 </head>
 <body>
 <div class="container">
@@ -15,6 +15,21 @@
         <textarea id="math-input" rows="6" cols="100" spellcheck="false"></textarea>
     </div>
     <div id="math-display"></div>
+    <div id="color-picker">
+        <p>Choose Colors:</p>
+        <div>
+            <input type="color" id="background-color" name="head"
+                   value="#2c3e50">
+            <label for="background-color">Background Color</label>
+        </div>
+
+        <div>
+            <input type="color" id="text-color" name="body"
+                   value="#ffffff">
+            <label for="text-color">Text Color</label>
+        </div>
+    </div>
+    <br>
     <div id="source-container">
         <a href="https://github.com/HuakunShen/real_time_math_equation_generator" target="_blank">Source Code</a><br>
         <a href="https://www.mathjax.org/#gettingstarted" target="_blank">Library</a><br>
