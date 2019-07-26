@@ -20,4 +20,4 @@ MathJax realtime documentation: https://docs.mathjax.org/en/latest/advanced/type
 
 
 
-![1564163945476](C:\Users\shenh\AppData\Roaming\Typora\typora-user-images\1564163945476.png)
+![1564163945476](E:\Documents\CS_Projects\realtime_math_equation_generator\1564163945476.png)
