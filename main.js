@@ -31,9 +31,17 @@ document.getElementById("text-color").addEventListener('change', (event) => {
 function takeScreenshot() {
     const display = document.getElementById("math-display");
     // const display = document.getElementsByClassName("container")[0];
+    const canvas_width = document.body.offsetWidth;
     html2canvas(document.body, {
-
+        x: document.getElementsByClassName("container")[0].offsetLeft * 0.9,
+        // width: canvas_width - document.getElementsByClassName("container")[0].offsetWidth,
+        width: document.getElementsByClassName("container")[0].offsetWidth * 1.1,
+        // scrollX: 1000
     }).then(function (canvas) {
-        document.getElementsByClassName("modal-body")[0].appendChild(canvas);
+        const container = document.getElementsByClassName("modal-body")[0];
+        Array.from(container.children).forEach(element => {
+            element.remove();
+        });
+        container.appendChild(canvas);
     });
 }

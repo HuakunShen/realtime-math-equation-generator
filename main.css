@@ -69,5 +69,10 @@ textarea {
 }
 
 .modal-dialog {
-    max-width: 95%;
+    max-width: 90%;
+}
+
+.modal-body {
+    text-align: center;
+    display: inline-block;
 }
