@@ -11,7 +11,9 @@ math_input.oninput = function () {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, display]);
 };
 
+
 document.getElementById("background-color").addEventListener('change', (event) => {
+    document.getElementById("math-display").style.backgroundColor = event.target.value;
     document.body.style.backgroundColor = event.target.value;
 });
 
@@ -23,5 +25,15 @@ document.getElementById("text-color").addEventListener('change', (event) => {
     Array.from($("a")).forEach((a) => {
         a.style.color = event.target.value;
     });
-
 });
+
+
+function takeScreenshot() {
+    const display = document.getElementById("math-display");
+    // const display = document.getElementsByClassName("container")[0];
+    html2canvas(document.body, {
+
+    }).then(function (canvas) {
+        document.getElementsByClassName("modal-body")[0].appendChild(canvas);
+    });
+}
