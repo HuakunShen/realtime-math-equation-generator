@@ -18,11 +18,10 @@ document.getElementById("background-color").addEventListener('change', (event) =
 });
 
 document.getElementById("text-color").addEventListener('change', (event) => {
-    $("h1")[0].style.color = event.target.value;
-    $("#source-container")[0].style.color = event.target.value;
-    $("#math-display")[0].style.color = event.target.value;
-    $("#math-display")[0].style.borderColor = event.target.value;
-    Array.from($("a")).forEach((a) => {
+    console.log("text-color changed");
+    document.querySelector("h1").style.color = event.target.value;
+    document.querySelector("#math-display").style.borderColor = event.target.value;
+    Array.from(document.querySelectorAll("a")).forEach((a) => {
         a.style.color = event.target.value;
     });
 });
