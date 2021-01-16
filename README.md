@@ -1,5 +1,9 @@
 # Realtime Math Equation Generator Online
 
+## Web App Demo
+
+https://huakunshen.github.io/realtime-math-equation-generator
+
 ## Description
 
 You can generate math equation without any latex compiler.
@@ -22,7 +26,7 @@ With this app, one can generate any math equation without installing any package
 
 ## Source:
 
-Github Repo: https://github.com/HuakunShen/realtime_math_equation_generator
+Github Repo: https://github.com/HuakunShen/realtime-math-equation-generator
 
 ## Reference
 
