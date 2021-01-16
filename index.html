@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Equation Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Realtime Math Equation Generator</h1>
+    <div id="math-input-container" class="ui input focus">
+        <textarea id="math-input" rows="6" cols="100" spellcheck="false"></textarea>
+    </div>
+    <div id="math-display"></div>
+    <div id="color-picker">
+        <p>Choose Colors:</p>
+        <div>
+            <input type="color" id="background-color" value="#2c3e50">
+            <label for="background-color">Background Color</label>
+        </div>
+
+        <div>
+            <input type="color" id="text-color" value="#eeeeee">
+            <label for="text-color">Text Color</label>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" id="screenshot-btn" data-toggle="modal" data-target="#myModal"
+            onclick="takeScreenshot()">Capture Screenshot</button>
+    <br><br>
+    <div id="source-container">
+        <a href="https://github.com/HuakunShen/real_time_math_equation_generator" target="_blank">Source
+            Code</a><br>
+        <a href="https://www.mathjax.org/#gettingstarted" target="_blank">Library</a><br>
+        <a href="https://docs.mathjax.org/en/latest/advanced/typeset.html" target="_blank">Library Doc</a>
+    </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 style="color: black;">Right Click to Save Image</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+        async></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="./html2canvas.min.js"></script>
+<script src="./main.js"></script>
+</body>
+
+</html>

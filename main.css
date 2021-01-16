@@ -1,0 +1,78 @@
+body {
+    margin-top: 3em;
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+h1,
+h4 {
+    color: white;
+}
+
+.container {
+    margin: 5em 25% 0 25%;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    color: #ffffff;
+}
+
+.ui.input.focus {
+    width: 20em;
+}
+
+#math-display {
+    top: 20px;
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    word-break: break-word;
+    min-height: 10em;
+    border: 1px lightgrey;
+    border-style: dashed;
+    color: white;
+    padding: 2em;
+    margin-bottom: 2em;
+    background-color: inherit;
+}
+
+#scratch {
+    visibility: hidden;
+}
+
+textarea {
+    width: 100%;
+    /*border: 1px solid black;*/
+}
+
+#math-input-container {
+    width: 100%;
+}
+
+#source-container {
+    position: relative;
+}
+
+#color-picker {
+    background-color: rgba(44, 62, 80, 0.5);
+    width: 50%;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+#color-picker p, label {
+    color: white;
+}
+
+.modal-dialog {
+    max-width: 90%;
+}
+
+.modal-body {
+    text-align: center;
+    display: inline-block;
+}
